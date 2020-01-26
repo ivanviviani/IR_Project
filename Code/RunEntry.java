@@ -1,5 +1,7 @@
 public class RunEntry
 {
+    public static final int RUN_LEN = 1000;
+
     public String id;
     public double score;
 

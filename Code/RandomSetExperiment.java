@@ -21,6 +21,7 @@ public class RandomSetExperiment
     private static final int REP = 200;
     */
 
+    // SMALL TEST
     private static final String[] NAME = new String[]{"TREC-3"};
     private static final String[] RELEVANCE = new String[]{"T3-j.txt"};
     private static final int[] NUM_SYS = new int[]{40};
@@ -49,6 +50,18 @@ public class RandomSetExperiment
 
         for (int i = 0; i < NAME.length; i++)
         {
+            int topics = TOPIC_H[i]-TOPIC_L[i];
+
+            // Store run and relevance judgement
+            // [topic]
+            HashSet[] relevant = new HashSet[topics];
+            for(int j=0;j<topics;j++)
+            {
+                relevant[j] = Reader.extractJudgement(j, RELEVANCE[i]);
+            }
+            // [topic][sys][rank]
+            RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i],TOPIC_H[i]}, NAME[i]);
+
             // ITERATION MONITOR
             System.out.println("ED: "+NAME[i]);
             for (int j = 0; j < DIM.length; j++)
@@ -63,15 +76,14 @@ public class RandomSetExperiment
 
                     for (int l = TOPIC_L[i]; l < TOPIC_H[i]; l++)
                     {
-                        HashSet<String> relevant = Reader.extractJudgement(l, RELEVANCE[i]);
-                        RunEntry[][] run = Reader.extractRunByTopic(l, chosenSys, NAME[i]);
+                        RunEntry[][] run = Reader.extractRunFromSuperRun(l,chosenSys,superRun);
 
-                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(run), relevant);
-                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(run), relevant);
-                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(run), relevant);
-                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(run), relevant);
+                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(run), relevant[l]);
+                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(run), relevant[l]);
+                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(run), relevant[l]);
+                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(run), relevant[l]);
 
-                        double normalize = REP * (TOPIC_H[i] - TOPIC_L[i]);
+                        double normalize = REP * (topics);
 
                         resultMAP[i][0][j] += combMNZ / normalize;
                         resultMAP[i][1][j] += rCombMNZ / normalize;

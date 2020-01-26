@@ -6,6 +6,46 @@ import java.util.Scanner;
 
 public class Reader
 {
+    /**
+     * Create a super run containing the run of all topics, all systems. In particular create a
+     * mulidimensional array: [topic][system][rank in run]
+     *
+     * @param topicsRange The range of topic number: tR[0] -> min topic number, tR[1] -> max topic number +1
+     * @param folder The folder containin all the files.
+     * @return The super run multidimensional array.
+     */
+    public static RunEntry[][][] extractSuperRun(int[] topicsRange, String folder)
+    {
+        File dir = new File(folder);
+        File[] input = dir.listFiles();
+        RunEntry[][][] superRun = new RunEntry[topicsRange[1]-topicsRange[0]][input.length][RunEntry.RUN_LEN];
+
+        /*
+         * For each of the sampled system, for each topic create the run related to the topic.
+         */
+        for (int i = 0; i < input.length; i++)
+        {
+            try
+            {
+                Scanner scan = new Scanner(input[i]);
+                int j=0;
+                while (scan.hasNextLine())
+                {
+                    String[] line = tokenize(scan.nextLine());
+                    int topic = Integer.parseInt(line[0])-topicsRange[0];
+                    superRun[topic][i][j] = new RunEntry(line[2], Double.parseDouble(line[4]));
+                    j = (j + 1) % RunEntry.RUN_LEN;
+                }
+            }
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
+        }
+
+        return superRun;
+    }
+
     public static RunEntry[][] extractRunByTopic(int topic, int[] sys, String folder)
     {
         /*
@@ -17,7 +57,7 @@ public class Reader
         /*
          * For each of the sampled system, create the run related to the topic.
          */
-        RunEntry[][] run = new RunEntry[sys.length][5];
+        RunEntry[][] run = new RunEntry[sys.length][RunEntry.RUN_LEN];
         for (int i = 0; i < sys.length; i++)
         {
             try
@@ -27,11 +67,11 @@ public class Reader
                 while (scan.hasNextLine())
                 {
                     String[] line = tokenize(scan.nextLine());
-                    if (Integer.parseInt(line[0]) == topic && j < 5)
+                    if (Integer.parseInt(line[0]) == topic && j < RunEntry.RUN_LEN)
                     {
                         run[i][j++] = new RunEntry(line[2], Double.parseDouble(line[4]));
                     }
-                    else if (Integer.parseInt(line[0]) > topic || j >= 5)
+                    else if (Integer.parseInt(line[0]) > topic || j >= RunEntry.RUN_LEN)
                     {
                         break;
                     }
@@ -58,7 +98,7 @@ public class Reader
         /*
          * For each topic of the system, create a run.
          */
-        RunEntry[][] run = new RunEntry[topicRange[1] - topicRange[0]][5];
+        RunEntry[][] run = new RunEntry[topicRange[1] - topicRange[0]][RunEntry.RUN_LEN];
         try
         {
             Scanner scan = new Scanner(f);
@@ -110,6 +150,18 @@ public class Reader
         }
 
         return relevant;
+    }
+
+    public static RunEntry[][] extractRunFromSuperRun(int topic, int[] sys, RunEntry[][][] superRun)
+    {
+        RunEntry[][] run = new RunEntry[sys.length][RunEntry.RUN_LEN];
+
+        for(int i=0;i<sys.length;i++)
+        {
+            run[i] = superRun[topic][sys[i]];
+        }
+
+        return run;
     }
 
     public static int[] reservoirSampling(int limit, int num)

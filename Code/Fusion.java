@@ -57,7 +57,7 @@ public class Fusion
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
         finalRun = Util.sortRun(finalRun);
-        finalRun = Util.extractTop(finalRun, 5);
+        finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
         System.out.println("CombMNZ");
@@ -125,7 +125,7 @@ public class Fusion
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
         finalRun = Util.sortRun(finalRun);
-        finalRun = Util.extractTop(finalRun, 5);
+        finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
         System.out.println("CombMNZ");
@@ -182,7 +182,7 @@ public class Fusion
          */
         RunEntry[] finalRun = collection.values().toArray(new RunEntry[0]);
         finalRun = Util.sortRun(finalRun);
-        finalRun = Util.extractTop(finalRun, 5);
+        finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
         System.out.println("bordaFuse");
