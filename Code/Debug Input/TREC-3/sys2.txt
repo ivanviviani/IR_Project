@@ -1,0 +1,5 @@
+1	Q0	docB	1	5	run2
+1	Q0	docC	2	4	run2
+1	Q0	docE	3	3	run2
+1	Q0	docD	4	2	run2
+1	Q0	docF	5	1	run2
