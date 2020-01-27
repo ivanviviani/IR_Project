@@ -73,6 +73,7 @@ public class Reader
         return superRun;
     }
 
+    /*DEPRECATED: condider a fixed run length*/
     public static RunEntry[][] extractRunByTopic(int topic, int[] sys, String folder)
     {
         /*
@@ -113,6 +114,7 @@ public class Reader
         return run;
     }
 
+    /*DEPRECATED: condider a fixed run length*/
     public static RunEntry[][] extractRunBySystem(int sys, int[] topicRange, String folder)
     {
         /*
@@ -177,18 +179,6 @@ public class Reader
         }
 
         return relevant;
-    }
-
-    public static RunEntry[][] extractRunFromSuperRun(int topicNorm, int[] sys, RunEntry[][][] superRun)
-    {
-        RunEntry[][] run = new RunEntry[sys.length][RunEntry.RUN_LEN];
-
-        for(int i=0;i<sys.length;i++)
-        {
-            run[i] = superRun[topicNorm][sys[i]];
-        }
-
-        return run;
     }
 
     public static int[] reservoirSampling(int limit, int num)

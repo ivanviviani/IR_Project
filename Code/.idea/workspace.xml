@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55d60c2-3413-48e2-90fa-2066d2270d2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Debug/Result-TREC-3.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Debug/T3-judgement.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Debug/TREC-3/sys1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Debug/TREC-3/sys2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Debug/TREC-3/sys3.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/Fusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Fusion.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/META-INF/Code.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/Reader.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Reader.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/RunEntry.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/RunEntry.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomSetExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomSetExperiment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +26,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="597">
+              <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -46,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fusion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2204">
-              <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+            <state relative-caret-position="4182">
+              <caret line="246" column="8" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -58,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+            <state relative-caret-position="17">
+              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="60" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,8 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="624">
-              <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
+            <state relative-caret-position="2193">
+              <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -116,10 +108,10 @@
         <option value="$PROJECT_DIR$/Experiment.java" />
         <option value="$PROJECT_DIR$/BestFusionExperiment.java" />
         <option value="$PROJECT_DIR$/RunEntry.java" />
+        <option value="$PROJECT_DIR$/Reader.java" />
         <option value="$PROJECT_DIR$/Util.java" />
         <option value="$PROJECT_DIR$/RandomSetExperiment.java" />
         <option value="$PROJECT_DIR$/Fusion.java" />
-        <option value="$PROJECT_DIR$/Reader.java" />
       </list>
     </option>
   </component>
@@ -151,7 +143,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580066938371" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580115876559" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -207,7 +199,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.21677852" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -218,7 +209,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -250,6 +241,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2193">
+          <caret line="129" lean-forward="true" selection-start-line="129" selection-end-line="129" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RunEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -257,23 +261,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="213" column="5" selection-start-line="213" selection-start-column="5" selection-end-line="213" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="44" selection-start-line="20" selection-start-column="44" selection-end-line="20" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="60" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -282,8 +273,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fusion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2204">
-          <caret line="29" column="31" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+        <state relative-caret-position="4182">
+          <caret line="246" column="8" selection-start-line="246" selection-start-column="8" selection-end-line="246" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -292,8 +283,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
-          <caret line="82" column="26" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="597">
+          <caret line="93" column="25" selection-start-line="93" selection-start-column="25" selection-end-line="93" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

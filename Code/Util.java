@@ -68,10 +68,12 @@ public class Util
      * Given a run, sort its element usign as comparator the majority runoff vote.
      *
      * @param run       The run to elaborate.
-     * @param reference The reference runs to compute the majority runoff.
+     * @param superRun The super run that contain all runs for all systems and topics.
+     * @param topic The number of the considered topic.
+     * @param sys The assay with the number of considered systems.
      * @return The sorted run.
      */
-    public static RunEntry[] sortRunMajRunoff(RunEntry[] run, RunEntry[][] reference)
+    public static RunEntry[] sortRunMajRunoff(RunEntry[] run, RunEntry[][][] superRun, int topic, int[] sys)
     {
         /*
          * Quicksort implementation
@@ -88,7 +90,7 @@ public class Util
         ArrayList<RunEntry> equalList = new ArrayList<>();
         for (int i = 0; i < run.length; i++)
         {
-            int comparisonResult = compare(run[i], pivot, reference);
+            int comparisonResult = compare(run[i], pivot, superRun, topic, sys);
             if (comparisonResult > 0)
             {
                 greaterList.add(run[i]);
@@ -103,8 +105,8 @@ public class Util
             }
         }
 
-        RunEntry[] greater = sortRunMajRunoff(greaterList.toArray(new RunEntry[0]), reference);
-        RunEntry[] lower = sortRunMajRunoff(lowerList.toArray(new RunEntry[0]), reference);
+        RunEntry[] greater = sortRunMajRunoff(greaterList.toArray(new RunEntry[0]), superRun, topic, sys);
+        RunEntry[] lower = sortRunMajRunoff(lowerList.toArray(new RunEntry[0]), superRun, topic, sys);
 
         RunEntry[] newRun = new RunEntry[run.length];
         for (int i = 0; i < run.length; i++)
@@ -126,7 +128,7 @@ public class Util
         return newRun;
     }
 
-    private static int compare(RunEntry a, RunEntry b, RunEntry[][] reference)
+    private static int compare(RunEntry a, RunEntry b, RunEntry[][][] superRun, int topic, int[] sys)
     {
         /*
          * Count the run with a before b and b before a, then return
@@ -140,17 +142,17 @@ public class Util
         int countA = 0;
         int countB = 0;
 
-        for (int i = 0; i < reference.length; i++)
+        for (int i = 0; i < sys.length; i++)
         {
-            for (int j = 0; j < reference[i].length; j++)
+            for (int j = 0; j < superRun[topic][sys[i]].length; j++)
             {
                 // The first one I found, win one point
-                if (reference[i][j].id.equals(a.id))
+                if (superRun[topic][sys[i]][j].id.equals(a.id))
                 {
                     countA++;
                     break;
                 }
-                if (reference[i][j].id.equals(b.id))
+                if (superRun[topic][sys[i]][j].id.equals(b.id))
                 {
                     countB++;
                     break;

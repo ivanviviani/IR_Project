@@ -78,12 +78,10 @@ public class RandomSetExperiment
 
                     for (int l = 0; l < topics; l++)
                     {
-                        RunEntry[][] run = Reader.extractRunFromSuperRun(l,chosenSys,superRun);
-
-                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(run), relevant[l]);
-                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(run), relevant[l]);
-                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(run), relevant[l]);
-                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(run), relevant[l]);
+                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(superRun,l,chosenSys), relevant[l]);
+                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(superRun,l,chosenSys), relevant[l]);
+                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(superRun,l,chosenSys), relevant[l]);
+                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun,l,chosenSys), relevant[l]);
 
                         double normalize = REP * (topics);
 
