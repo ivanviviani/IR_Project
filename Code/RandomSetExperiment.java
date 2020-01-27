@@ -52,6 +52,7 @@ public class RandomSetExperiment
         {
             int topics = TOPIC_H[i]-TOPIC_L[i];
 
+            System.out.println("Reading judgement");
             // Store run and relevance judgement
             // [topic]
             HashSet[] relevant = new HashSet[topics];
@@ -59,6 +60,7 @@ public class RandomSetExperiment
             {
                 relevant[j] = Reader.extractJudgement(j, RELEVANCE[i]);
             }
+            System.out.println("Reading runs");
             // [topic][sys][rank]
             RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i],TOPIC_H[i]}, NAME[i]);
 
@@ -74,7 +76,7 @@ public class RandomSetExperiment
                     System.out.print("*");
                     int[] chosenSys = Reader.reservoirSampling(NUM_SYS[i], DIM[j]);
 
-                    for (int l = TOPIC_L[i]; l < TOPIC_H[i]; l++)
+                    for (int l = 0; l < topics; l++)
                     {
                         RunEntry[][] run = Reader.extractRunFromSuperRun(l,chosenSys,superRun);
 
@@ -90,9 +92,9 @@ public class RandomSetExperiment
                         resultMAP[i][2][j] += bordaFuse / normalize;
                         resultMAP[i][3][j] += condorcetFuse / normalize;
                     }
-                    // ITERATION MONITOR
-                    System.out.println();
                 }
+                // ITERATION MONITOR
+                System.out.println();
             }
         }
 

@@ -25,6 +25,7 @@ public class Fusion
             for (int j = 0; j < run[i].length; j++)
             {
                 // Get current entry property
+
                 String currKey = run[i][j].id;
                 double currScore = run[i][j].score;
 

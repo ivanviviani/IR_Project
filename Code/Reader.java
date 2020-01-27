@@ -28,14 +28,25 @@ public class Reader
             try
             {
                 Scanner scan = new Scanner(input[i]);
-                int j=0;
+                int currTopic = 0;
+                ArrayList<RunEntry> currRun = new ArrayList<>();
                 while (scan.hasNextLine())
                 {
                     String[] line = tokenize(scan.nextLine());
                     int topic = Integer.parseInt(line[0])-topicsRange[0];
-                    superRun[topic][i][j] = new RunEntry(line[2], Double.parseDouble(line[4]));
-                    j = (j + 1) % RunEntry.RUN_LEN;
+                    RunEntry currEntry = new RunEntry(line[2], Double.parseDouble(line[4]));
+
+                    if(topic!=currTopic)
+                    {
+                        superRun[currTopic][i] = currRun.toArray(new RunEntry[0]);
+
+                        currTopic++;
+                        currRun = new ArrayList<>();
+                    }
+
+                    currRun.add(currEntry);
                 }
+                superRun[currTopic][i] = currRun.toArray(new RunEntry[0]);
             }
             catch (Exception e)
             {
@@ -43,6 +54,22 @@ public class Reader
             }
         }
 
+        /*/
+        for(int topic = 0; topic<superRun.length;topic++)
+        {
+            for(int sys = 0;sys<superRun[topic].length;sys++)
+            {
+                for(int rank = 0;rank<superRun[topic][sys].length;rank++)
+                {
+                    if(superRun[topic][sys][rank]==null)
+                    {
+                        System.out.println("NULL: "+topic+" "+sys+" "+rank);
+                    }
+
+                }
+            }
+        }
+        /*/
         return superRun;
     }
 
@@ -152,13 +179,13 @@ public class Reader
         return relevant;
     }
 
-    public static RunEntry[][] extractRunFromSuperRun(int topic, int[] sys, RunEntry[][][] superRun)
+    public static RunEntry[][] extractRunFromSuperRun(int topicNorm, int[] sys, RunEntry[][][] superRun)
     {
         RunEntry[][] run = new RunEntry[sys.length][RunEntry.RUN_LEN];
 
         for(int i=0;i<sys.length;i++)
         {
-            run[i] = superRun[topic][sys[i]];
+            run[i] = superRun[topicNorm][sys[i]];
         }
 
         return run;
