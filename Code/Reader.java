@@ -73,105 +73,50 @@ public class Reader
         return superRun;
     }
 
-    /*DEPRECATED: condider a fixed run length*/
-    public static RunEntry[][] extractRunByTopic(int topic, int[] sys, String folder)
-    {
-        /*
-         * Initialize utilities as file location and array with sampling the systems.
-         */
-        File dir = new File(folder);
-        File[] input = dir.listFiles();
-
-        /*
-         * For each of the sampled system, create the run related to the topic.
-         */
-        RunEntry[][] run = new RunEntry[sys.length][RunEntry.RUN_LEN];
-        for (int i = 0; i < sys.length; i++)
-        {
-            try
-            {
-                Scanner scan = new Scanner(input[sys[i]]);
-                int j = 0;
-                while (scan.hasNextLine())
-                {
-                    String[] line = tokenize(scan.nextLine());
-                    if (Integer.parseInt(line[0]) == topic && j < RunEntry.RUN_LEN)
-                    {
-                        run[i][j++] = new RunEntry(line[2], Double.parseDouble(line[4]));
-                    }
-                    else if (Integer.parseInt(line[0]) > topic || j >= RunEntry.RUN_LEN)
-                    {
-                        break;
-                    }
-                }
-            }
-            catch (Exception e)
-            {
-                e.printStackTrace();
-            }
-        }
-
-        return run;
-    }
-
-    /*DEPRECATED: condider a fixed run length*/
-    public static RunEntry[][] extractRunBySystem(int sys, int[] topicRange, String folder)
-    {
-        /*
-         * Initialize utilities as file location and array with sampling the systems.
-         */
-        File dir = new File(folder);
-        File[] input = dir.listFiles();
-        File f = input[sys];
-
-        /*
-         * For each topic of the system, create a run.
-         */
-        RunEntry[][] run = new RunEntry[topicRange[1] - topicRange[0]][RunEntry.RUN_LEN];
-        try
-        {
-            Scanner scan = new Scanner(f);
-            while (scan.hasNextLine())
-            {
-                String[] line = tokenize(scan.nextLine());
-                int topic = Integer.parseInt(line[0]) - topicRange[0];
-                int rank = Integer.parseInt(line[3]) - 1;
-                run[topic][rank] = new RunEntry(line[2], Double.parseDouble(line[4]));
-            }
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
-        }
-
-        return run;
-    }
-
-    public static HashSet<String> extractJudgement(int topic, String filename)
+    /**
+     * Reads all the relevance judgements.
+     *
+     * @param topics The non normalized number of topic.
+     * @param filename The name of the file containing the data.
+     * @return The array of hash set with the relevant documents per topic.
+     */
+    public static HashSet<String>[] extractJudgement(int topics, String filename)
     {
         /*
          * Initialize the hashset that will contain the relevant documents.
          */
-        HashSet<String> relevant = new HashSet<>();
-
+        HashSet<String>[] relevant = new HashSet[topics];
+        int i = 0;
         /*
          * For the requested topic, save all the document that are relevant.
          */
         try
         {
             Scanner scan = new Scanner(new File(filename));
+            int currTopic = -1;
+            HashSet<String> currJudge = new HashSet<>();
             while (scan.hasNextLine())
             {
                 String[] line = tokenize(scan.nextLine());
-                if (Integer.parseInt(line[0]) == topic && Integer.parseInt(line[3]) == 1)
+                // Initialize currTopic (once)
+                if(currTopic==-1)
                 {
-                    relevant.add(line[2]);
+                    currTopic = Integer.parseInt(line[0]);
                 }
-                else if (Integer.parseInt(line[0]) > topic)
+
+                if(Integer.parseInt(line[0]) != currTopic)
                 {
-                    break;
+                    relevant[i++] = currJudge;
+                    currJudge = new HashSet<>();
+                    currTopic++;
+                }
+
+                if (Integer.parseInt(line[3]) == 1)
+                {
+                    currJudge.add(line[2]);
                 }
             }
+            relevant[i] = currJudge;
         }
         catch (Exception e)
         {
@@ -181,6 +126,13 @@ public class Reader
         return relevant;
     }
 
+    /**
+     * Performs a reservoir sampling.
+     *
+     * @param limit The size of the stream.
+     * @param num The number of sample required.
+     * @return The array with the sampled positions.
+     */
     public static int[] reservoirSampling(int limit, int num)
     {
         /*

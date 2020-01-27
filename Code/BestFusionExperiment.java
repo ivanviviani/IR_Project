@@ -19,19 +19,11 @@ public class BestFusionExperiment
             int topics = TOPIC_H[i]-TOPIC_L[i];
             double[] map = new double[NUM_SYS[i]];
 
-            HashSet[] relevance = new HashSet[topics];
-            for(int j=0;j<topics;j++)
-            {
-                relevance[j] = Reader.extractJudgement(j+TOPIC_L[i],RELEVANCE[i]);
-            }
+            HashSet<String>[] relevance = Reader.extractJudgement(topics,RELEVANCE[i]);
 
             for(int j=0;j<NUM_SYS.length;j++)
             {
-                RunEntry[][] run = Reader.extractRunBySystem(j,new int[]{TOPIC_L[i],TOPIC_H[i]},NAME[i]);
-                for(int k=0;k<topics;k++)
-                {
-                    map[j] += Util.averagePrecision(run[k],relevance[k])/topics;
-                }
+
             }
 
 

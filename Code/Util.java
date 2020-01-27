@@ -1,167 +1,8 @@
-import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HashSet;
-import java.util.Random;
 
 public class Util
 {
-    /**
-     * Given a run, sort its element by descending score.
-     *
-     * @param run The run to elaborate.
-     * @return The sorted run.
-     */
-    public static RunEntry[] sortRun(RunEntry[] run)
-    {
-        /*
-         * Quicksort implementation
-         */
-        Random r = new Random();
-        if (run.length < 2)
-        {
-            return run;
-        }
-
-        double pivot = run[r.nextInt(run.length)].score;
-        ArrayList<RunEntry> greaterList = new ArrayList<>();
-        ArrayList<RunEntry> lowerList = new ArrayList<>();
-        ArrayList<RunEntry> equalList = new ArrayList<>();
-        for (int i = 0; i < run.length; i++)
-        {
-            if (run[i].score > pivot)
-            {
-                greaterList.add(run[i]);
-            }
-            else if (run[i].score < pivot)
-            {
-                lowerList.add(run[i]);
-            }
-            else
-            {
-                equalList.add(run[i]);
-            }
-        }
-
-        RunEntry[] greater = sortRun(greaterList.toArray(new RunEntry[0]));
-        RunEntry[] lower = sortRun(lowerList.toArray(new RunEntry[0]));
-
-        RunEntry[] newRun = new RunEntry[run.length];
-        for (int i = 0; i < run.length; i++)
-        {
-            if (i < greater.length)
-            {
-                newRun[i] = greater[i];
-            }
-            else if (i < greater.length + equalList.size())
-            {
-                newRun[i] = equalList.get(i - greater.length);
-            }
-            else
-            {
-                newRun[i] = lower[i - greater.length - equalList.size()];
-            }
-        }
-
-        return newRun;
-    }
-
-    /**
-     * Given a run, sort its element usign as comparator the majority runoff vote.
-     *
-     * @param run       The run to elaborate.
-     * @param superRun The super run that contain all runs for all systems and topics.
-     * @param topic The number of the considered topic.
-     * @param sys The assay with the number of considered systems.
-     * @return The sorted run.
-     */
-    public static RunEntry[] sortRunMajRunoff(RunEntry[] run, RunEntry[][][] superRun, int topic, int[] sys)
-    {
-        /*
-         * Quicksort implementation
-         */
-        Random r = new Random();
-        if (run.length < 2)
-        {
-            return run;
-        }
-
-        RunEntry pivot = run[r.nextInt(run.length)];
-        ArrayList<RunEntry> greaterList = new ArrayList<>();
-        ArrayList<RunEntry> lowerList = new ArrayList<>();
-        ArrayList<RunEntry> equalList = new ArrayList<>();
-        for (int i = 0; i < run.length; i++)
-        {
-            int comparisonResult = compare(run[i], pivot, superRun, topic, sys);
-            if (comparisonResult > 0)
-            {
-                greaterList.add(run[i]);
-            }
-            else if (comparisonResult < 0)
-            {
-                lowerList.add(run[i]);
-            }
-            else
-            {
-                equalList.add(run[i]);
-            }
-        }
-
-        RunEntry[] greater = sortRunMajRunoff(greaterList.toArray(new RunEntry[0]), superRun, topic, sys);
-        RunEntry[] lower = sortRunMajRunoff(lowerList.toArray(new RunEntry[0]), superRun, topic, sys);
-
-        RunEntry[] newRun = new RunEntry[run.length];
-        for (int i = 0; i < run.length; i++)
-        {
-            if (i < greater.length)
-            {
-                newRun[i] = greater[i];
-            }
-            else if (i < greater.length + equalList.size())
-            {
-                newRun[i] = equalList.get(i - greater.length);
-            }
-            else
-            {
-                newRun[i] = lower[i - greater.length - equalList.size()];
-            }
-        }
-
-        return newRun;
-    }
-
-    private static int compare(RunEntry a, RunEntry b, RunEntry[][][] superRun, int topic, int[] sys)
-    {
-        /*
-         * Count the run with a before b and b before a, then return
-         * the difference A-B ( A-B>0 iff A>B )
-         */
-        if (a.id.equals(b.id))
-        {
-            return 0;
-        }
-
-        int countA = 0;
-        int countB = 0;
-
-        for (int i = 0; i < sys.length; i++)
-        {
-            for (int j = 0; j < superRun[topic][sys[i]].length; j++)
-            {
-                // The first one I found, win one point
-                if (superRun[topic][sys[i]][j].id.equals(a.id))
-                {
-                    countA++;
-                    break;
-                }
-                if (superRun[topic][sys[i]][j].id.equals(b.id))
-                {
-                    countB++;
-                    break;
-                }
-            }
-        }
-        return countA - countB;
-    }
-
     /**
      * Return the first k entry of the run.
      *
@@ -213,5 +54,45 @@ public class Util
         /*/
 
         return averagePrecision;
+    }
+}
+
+class MajRunoffComparator implements Comparator<RunEntry>
+{
+    private RunEntry[][][] superRun;
+    private int topic;
+    private int[] sys;
+
+    public MajRunoffComparator(RunEntry[][][] sR, int t, int[] s)
+    {
+        superRun = sR;
+        topic = t;
+        sys = s;
+    }
+
+    public int compare(RunEntry r1, RunEntry r2)
+    {
+        /*
+         * Count the run with a before b and b before a, then return
+         * the difference A-B ( A-B>0 iff A>B )
+         */
+        // if (r1.id.equals(r2.id)) return 0;
+        int count = 0;
+        for (int i = 0; i < sys.length; i++)
+            for (int j = 0; j < superRun[topic][sys[i]].length; j++)
+            {
+                // The first one I found, win one point
+                if (superRun[topic][sys[i]][j].id.equals(r1.id))
+                {
+                    count++;
+                    break;
+                }
+                if (superRun[topic][sys[i]][j].id.equals(r2.id))
+                {
+                    count++;
+                    break;
+                }
+            }
+        return count;
     }
 }

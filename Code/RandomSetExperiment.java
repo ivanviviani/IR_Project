@@ -30,7 +30,7 @@ public class RandomSetExperiment
 
     private static final int[] DIM = new int[]{2, 4, 6, 8, 10, 12};
 
-    private static final int REP = 10;//200;
+    private static final int REP = 10;
 
     /* DEBUG PARAMETERS
     private static final String[] NAME = new String[]{"TREC-3"};
@@ -52,23 +52,25 @@ public class RandomSetExperiment
         {
             int topics = TOPIC_H[i]-TOPIC_L[i];
 
-            System.out.println("Reading judgement");
+            long t = System.currentTimeMillis();
+            System.out.print("Reading judgement");
             // Store run and relevance judgement
             // [topic]
-            HashSet[] relevant = new HashSet[topics];
-            for(int j=0;j<topics;j++)
-            {
-                relevant[j] = Reader.extractJudgement(j, RELEVANCE[i]);
-            }
-            System.out.println("Reading runs");
+            HashSet<String>[] relevant = Reader.extractJudgement(topics, RELEVANCE[i]);
+            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
+
+            t = System.currentTimeMillis();
+            System.out.print("Reading runs");
             // [topic][sys][rank]
             RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i],TOPIC_H[i]}, NAME[i]);
+            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
 
             // ITERATION MONITOR
             System.out.println("ED: "+NAME[i]);
             for (int j = 0; j < DIM.length; j++)
             {
                 // ITERATION MONITOR
+                t = System.currentTimeMillis();
                 System.out.println("SAMPLE: "+DIM[j]);
                 for (int k = 0; k < REP; k++)
                 {
@@ -93,6 +95,7 @@ public class RandomSetExperiment
                 }
                 // ITERATION MONITOR
                 System.out.println();
+                System.out.println("SAMPLE: "+DIM[j]+" ("+(System.currentTimeMillis()-t)+" ms)");
             }
         }
 

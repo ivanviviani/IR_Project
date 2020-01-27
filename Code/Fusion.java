@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -59,7 +60,10 @@ public class Fusion
         {
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
-        finalRun = Util.sortRun(finalRun);
+
+        //finalRun = Util.sortRun(finalRun);
+        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?1:((x.score-y.score<0)?(-1):0));
+
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
@@ -129,7 +133,10 @@ public class Fusion
         {
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
-        finalRun = Util.sortRun(finalRun);
+
+        //finalRun = Util.sortRun(finalRun);
+        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?1:((x.score-y.score<0)?(-1):0));
+
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
@@ -188,7 +195,10 @@ public class Fusion
          * by score (sum of points) and trimmed to the first 1000 results.
          */
         RunEntry[] finalRun = collection.values().toArray(new RunEntry[0]);
-        finalRun = Util.sortRun(finalRun);
+
+        //finalRun = Util.sortRun(finalRun);
+        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?1:((x.score-y.score<0)?(-1):0));
+
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         /*/
@@ -242,7 +252,8 @@ public class Fusion
             finalRun[i] = new RunEntry(ids[i],1/(i+1.0)); // symbolic score
         }
 
-        finalRun = Util.sortRunMajRunoff(finalRun, superRun, topic, sys);
+        //finalRun = Util.sortRunMajRunoff(finalRun, superRun, topic, sys);
+        Arrays.parallelSort(finalRun, new MajRunoffComparator(superRun,topic,sys));
 
         /*/
         System.out.println("CondorcetFuse");
