@@ -3,13 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="c55d60c2-3413-48e2-90fa-2066d2270d2a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BestFusionExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/BestFusionExperiment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fusion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/Fusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Fusion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/MajRunoffComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/MajRunoffComparator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomSetExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomSetExperiment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result-TREC-3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Result-TREC-3.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Result-TREC-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Result-TREC-3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +21,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="595">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -32,8 +33,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
+            <state relative-caret-position="550">
+              <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Fusion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="-544">
+              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -56,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,7 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="270">
+              <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,6 +102,9 @@
       <find>5</find>
       <find>3</find>
     </findStrings>
+    <dirStrings>
+      <dir>C:\Users\marco\Documents\GitHub\IR_Project\Code\TREC-9</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -113,15 +118,15 @@
         <option value="$PROJECT_DIR$/Precision.java" />
         <option value="$PROJECT_DIR$/Experiment.java" />
         <option value="$PROJECT_DIR$/RunEntry.java" />
-        <option value="$PROJECT_DIR$/Fusion.java" />
-        <option value="$PROJECT_DIR$/Util.java" />
+        <option value="$PROJECT_DIR$/BestFusionExperiment.java" />
         <option value="$PROJECT_DIR$/Reader.java" />
         <option value="$PROJECT_DIR$/RandomSetExperiment.java" />
-        <option value="$PROJECT_DIR$/BestFusionExperiment.java" />
+        <option value="$PROJECT_DIR$/Fusion.java" />
+        <option value="$PROJECT_DIR$/Util.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1255" />
@@ -133,8 +138,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -146,10 +149,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580149220835" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580285850607" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -205,8 +210,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.21677852" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.22281879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -215,12 +221,12 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27478755" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4532578" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
@@ -247,6 +253,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/RunEntry.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -254,9 +267,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArraysParallelSortHelpers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="135" column="40" lean-forward="true" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="1106" column="34" lean-forward="true" selection-start-line="1106" selection-start-column="34" selection-end-line="1106" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="270">
+          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -265,8 +303,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="169" column="5" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -275,28 +313,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fusion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="-544">
+          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="101" column="11" lean-forward="true" selection-start-line="101" selection-start-column="11" selection-end-line="101" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
         </state>
       </provider>
     </entry>
