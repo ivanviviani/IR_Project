@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -68,17 +69,11 @@ public class Fusion
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
 
-        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
-
-        /*/
-        System.out.println("CombMNZ");
-        for(int i = 0;i<5;i++)
-        {
-            System.out.println(finalRun[i].id+"\t"+finalRun[i].score);
-        }
-        /*/
 
         return finalRun;
     }
@@ -148,17 +143,10 @@ public class Fusion
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
 
-        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
-
-        /*/
-        System.out.println("CombMNZ");
-        for(int i = 0;i<5;i++)
-        {
-            System.out.println(finalRun[i].id+"\t"+finalRun[i].score);
-        }
-        /*/
 
         return finalRun;
     }
@@ -217,17 +205,10 @@ public class Fusion
          */
         RunEntry[] finalRun = collection.values().toArray(new RunEntry[0]);
 
-        Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
-
-        /*/
-        System.out.println("bordaFuse");
-        for(int i = 0;i<5;i++)
-        {
-            System.out.println(finalRun[i].id+"\t"+finalRun[i].score);
-        }
-        /*/
 
         return finalRun;
     }
@@ -240,7 +221,7 @@ public class Fusion
      * @param sys The assay with the number of considered systems.
      * @return The fusion run.
      */
-    public static RunEntry[] condorcetFuse(RunEntry[][][] superRun, int topic, int[] sys)
+    public static RunEntry[] condorcetFuse(RunEntry[][][] superRun, int topic, int[] sys, HashMap<String, Integer[]> support)
     {
         /*
          * Create a list containing all the documents in the runs,
@@ -254,10 +235,7 @@ public class Fusion
             {
                 String currKey = superRun[topic][sys[i]][j].id;
 
-                if (!collection.contains(currKey))
-                {
-                    collection.add(currKey);
-                }
+                collection.add(currKey);
             }
         }
 
@@ -272,17 +250,9 @@ public class Fusion
             finalRun[i] = new RunEntry(ids[i],1/(i+1.0)); // symbolic score
         }
 
-        Arrays.parallelSort(finalRun, new MajRunoffComparator(superRun,topic,sys));
+        Util.quickSort(finalRun, new MajRunoffComparator(sys,support));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
-
-        /*/
-        System.out.println("CondorcetFuse");
-        for(int i = 0;i<5;i++)
-        {
-            System.out.println(finalRun[i].id+"\t"+finalRun[i].score);
-        }
-        /*/
 
         return finalRun;
     }

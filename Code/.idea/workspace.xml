@@ -2,15 +2,115 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55d60c2-3413-48e2-90fa-2066d2270d2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Fusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/Fusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Fusion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/MajRunoffComparator.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/MajRunoffComparator.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomSetExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomSetExperiment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Reader.java" beforeDir="false" afterPath="$PROJECT_DIR$/Reader.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Result-TREC-3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Result-TREC-3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.acqnt1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.assctv1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.assctv2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.brkly6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.brkly7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citri1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citri2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citya1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citya2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.clarta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.clartm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.crnlea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.crnlla" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.dortd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.dortd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.erima1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.eth001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.eth002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.inq101" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.inq102" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.lsia0mf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.lsia0mw2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.nyuir1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.nyuir2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.padre1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.padre2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.pircs1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.pircs2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.rutfua1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.rutfua2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.siems1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.siems2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.topic3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.topic4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.virtu1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.vtc2s2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.vtc5s2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.westp1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.xerox3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.xerox4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.CLCLUS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.CLTHES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5A1se" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5A2cr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5M1le" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5M2rf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU961" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU962" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU963" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU964" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHal1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHas1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHme1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.INQ301" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.INQ302" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.KUSG2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.KUSG3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNaDesc1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNaDesc2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNmFull1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNmFull2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5aut1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5aut2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5man4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5man6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly15" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly16" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly17" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly18" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.city96a1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.city96a2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.colm1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.colm4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.erliA1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.fsclt3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.fsclt4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96au1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96au2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96ma1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96ma2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmgd1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmgd2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmge1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmge2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibms96a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibms96b" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds001" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds002" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds003" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAAL" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAAS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAM1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAM2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.uwgcx0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.uwgcx1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.vtwnA1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.vtwnB1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
+            <state relative-caret-position="391">
+              <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,11 +142,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fusion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-544">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+            <state relative-caret-position="3310">
+              <caret line="231" column="18" selection-start-line="231" selection-start-column="18" selection-end-line="231" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -57,8 +157,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Reader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="182">
+              <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -69,11 +169,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="2295">
+              <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -120,13 +217,13 @@
         <option value="$PROJECT_DIR$/RunEntry.java" />
         <option value="$PROJECT_DIR$/BestFusionExperiment.java" />
         <option value="$PROJECT_DIR$/Reader.java" />
-        <option value="$PROJECT_DIR$/RandomSetExperiment.java" />
-        <option value="$PROJECT_DIR$/Fusion.java" />
         <option value="$PROJECT_DIR$/Util.java" />
+        <option value="$PROJECT_DIR$/Fusion.java" />
+        <option value="$PROJECT_DIR$/RandomSetExperiment.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
     <option name="width" value="1255" />
@@ -154,7 +251,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580285850607" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580295588526" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
@@ -208,6 +305,15 @@
     </task>
     <servers />
   </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
@@ -221,11 +327,11 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4532578" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41784704" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
@@ -267,16 +373,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="99" column="29" selection-start-line="99" selection-start-column="29" selection-end-line="99" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArraysParallelSortHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -291,20 +387,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="103" column="27" selection-start-line="103" selection-start-column="27" selection-end-line="103" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="15" column="7" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="182">
+          <caret line="53" column="8" selection-start-line="53" selection-start-column="8" selection-end-line="53" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -313,8 +399,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Fusion.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-544">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
+        <state relative-caret-position="3310">
+          <caret line="231" column="18" selection-start-line="231" selection-start-column="18" selection-end-line="231" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2295">
+          <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="29" column="48" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

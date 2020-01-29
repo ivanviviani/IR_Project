@@ -1,8 +1,5 @@
 import java.io.File;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.Random;
-import java.util.Scanner;
+import java.util.*;
 
 public class Reader
 {
@@ -11,14 +8,14 @@ public class Reader
      * mulidimensional array: [topic][system][rank in run]
      *
      * @param topicsRange The range of topic number: tR[0] -> min topic number, tR[1] -> max topic number +1
-     * @param folder The folder containin all the files.
+     * @param folder      The folder containin all the files.
      * @return The super run multidimensional array.
      */
     public static RunEntry[][][] extractSuperRun(int[] topicsRange, String folder)
     {
         File dir = new File(folder);
         File[] input = dir.listFiles();
-        RunEntry[][][] superRun = new RunEntry[topicsRange[1]-topicsRange[0]][input.length][RunEntry.RUN_LEN];
+        RunEntry[][][] superRun = new RunEntry[topicsRange[1] - topicsRange[0]][input.length][RunEntry.RUN_LEN];
 
         /*
          * For each of the sampled system, for each topic create the run related to the topic.
@@ -33,10 +30,10 @@ public class Reader
                 while (scan.hasNextLine())
                 {
                     String[] line = tokenize(scan.nextLine());
-                    int topic = Integer.parseInt(line[0])-topicsRange[0];
+                    int topic = Integer.parseInt(line[0]) - topicsRange[0];
                     RunEntry currEntry = new RunEntry(line[2], Double.parseDouble(line[4]));
 
-                    if(topic!=currTopic)
+                    if (topic != currTopic)
                     {
                         superRun[currTopic][i] = currRun.toArray(new RunEntry[0]);
 
@@ -54,29 +51,47 @@ public class Reader
             }
         }
 
-        /*/
-        for(int topic = 0; topic<superRun.length;topic++)
+        return superRun;
+    }
+
+    /**
+     * Create, for each topic, an hashmap that associate a doc to its ranks in all the systems.
+     * Rank is 0-based, while null means not found in the run.
+     *
+     * @param superRun The super run multidimensional array.
+     * @return The array of hash maps for every topic.
+     */
+    public static HashMap<String, Integer[]>[] extractComparator(RunEntry[][][] superRun)
+    {
+        // Not found = 0
+        // Found = rank index 1-based
+        HashMap<String,Integer[]>[] cmp = new HashMap[superRun.length];
+        for (int i = 0; i < superRun.length; i++)
         {
-            for(int sys = 0;sys<superRun[topic].length;sys++)
+            cmp[i] = new HashMap<>();
+            for (int j = 0; j < superRun[i].length; j++)
             {
-                for(int rank = 0;rank<superRun[topic][sys].length;rank++)
+                for (int k = 0; k < superRun[i][j].length; k++)
                 {
-                    if(superRun[topic][sys][rank]==null)
+                    RunEntry currRE = superRun[i][j][k];
+
+                    if(!cmp[i].containsKey(currRE.id))
                     {
-                        System.out.println("NULL: "+topic+" "+sys+" "+rank);
+                        cmp[i].put(currRE.id,new Integer[superRun[i].length]);
                     }
 
+                    Integer[] ranks = cmp[i].get(currRE.id);
+                    ranks[j] = k;
                 }
             }
         }
-        /*/
-        return superRun;
+        return cmp;
     }
 
     /**
      * Reads all the relevance judgements.
      *
-     * @param topics The non normalized number of topic.
+     * @param topics   The non normalized number of topic.
      * @param filename The name of the file containing the data.
      * @return The array of hash set with the relevant documents per topic.
      */
@@ -99,12 +114,12 @@ public class Reader
             {
                 String[] line = tokenize(scan.nextLine());
                 // Initialize currTopic (once)
-                if(currTopic==-1)
+                if (currTopic == -1)
                 {
                     currTopic = Integer.parseInt(line[0]);
                 }
 
-                if(Integer.parseInt(line[0]) != currTopic)
+                if (Integer.parseInt(line[0]) != currTopic)
                 {
                     relevant[i++] = currJudge;
                     currJudge = new HashSet<>();
@@ -130,7 +145,7 @@ public class Reader
      * Performs a reservoir sampling.
      *
      * @param limit The size of the stream.
-     * @param num The number of sample required.
+     * @param num   The number of sample required.
      * @return The array with the sampled positions.
      */
     public static int[] reservoirSampling(int limit, int num)
@@ -162,7 +177,7 @@ public class Reader
     {
         ArrayList<String> token = new ArrayList<>();
         Scanner scan = new Scanner(str);
-        while(scan.hasNext())
+        while (scan.hasNext())
         {
             token.add(scan.next());
         }

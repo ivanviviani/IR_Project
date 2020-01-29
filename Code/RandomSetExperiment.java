@@ -1,4 +1,6 @@
 import java.io.PrintWriter;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 
 /*
@@ -17,17 +19,17 @@ public class RandomSetExperiment
     private static final int[] TOPIC_H = new int[]{201,301,501}; // +1
     private static final int[] DIM = new int[]{2, 4, 6, 8, 10, 12};
     private static final int REP = 200;
-    */
+    //*/
 
-    // SMALL TEST
+    //* SMALL TEST
     private static final String[] NAME = new String[]{"TREC-3"};
     private static final String[] RELEVANCE = new String[]{"T3-j.txt"};
     private static final int[] NUM_SYS = new int[]{40};
     private static final int[] TOPIC_L = new int[]{151};
     private static final int[] TOPIC_H = new int[]{201}; // +1
-    private static final int[] DIM = new int[]{2};//, 4, 6, 8, 10, 12};
-    private static final int REP = 1;
-    //
+    private static final int[] DIM = new int[]{2, 4, 6, 8, 10, 12};
+    private static final int REP = 200;
+    //*/
 
     /* DEBUG PARAMETERS
     private static final String[] NAME = new String[]{"TREC-3"};
@@ -37,7 +39,7 @@ public class RandomSetExperiment
     private static final int[] TOPIC_H = new int[]{2}; // +1
     private static final int[] DIM = new int[]{2,3};
     private static final int REP = 1;
-    */
+    //*/
 
     public static void main(String[] args)
     {
@@ -62,6 +64,12 @@ public class RandomSetExperiment
             RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i],TOPIC_H[i]}, NAME[i]);
             System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
 
+            t = System.currentTimeMillis();
+            System.out.print("Creating comparators hash maps");
+            // [topic][sys][rank]
+            HashMap<String,Integer[]>[] cmpHM = Reader.extractComparator(superRun);
+            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
+
             // ITERATION MONITOR
             System.out.println("ED: "+NAME[i]);
             for (int j = 0; j < DIM.length; j++)
@@ -72,30 +80,15 @@ public class RandomSetExperiment
                 for (int k = 0; k < REP; k++)
                 {
                     // ITERATION MONITOR
-                    //System.out.print("*");
+                    System.out.print("*");
                     int[] chosenSys = Reader.reservoirSampling(NUM_SYS[i], DIM[j]);
 
-                    /**/
-                    System.out.print("Sys: ");
-                    for(int item : chosenSys)
+                    for (int l = 0; l < topics; l++)
                     {
-                        System.out.print(item+" ");
-                    }
-                    System.out.println();
-                    /**/
-
-                    for (int l = 0; l < 2/*topics*/; l++)
-                    {
-                        System.out.println("Topic: "+l);
-
-                        System.out.println("combMNZ");
                         double combMNZ = Util.averagePrecision(Fusion.combMNZ(superRun,l,chosenSys), relevant[l]);
-                        System.out.println("rCombMNZ");
                         double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(superRun,l,chosenSys), relevant[l]);
-                        System.out.println("bordaFuse");
                         double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(superRun,l,chosenSys), relevant[l]);
-                        System.out.println("condorcenetFuse");
-                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun,l,chosenSys), relevant[l]);
+                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun,l,chosenSys,cmpHM[l]), relevant[l]);
 
                         double normalize = REP * (topics);
 
