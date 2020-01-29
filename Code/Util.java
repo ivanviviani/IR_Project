@@ -42,7 +42,7 @@ public class Util
         /*DEBUG*/
 
         double averagePrecision = 0;
-        int recallBase = relevant.size();
+        int recallBase = Math.max(relevant.size(),1);
         int relFound = 0;
 
         /*DEBUG/

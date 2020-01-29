@@ -2,12 +2,422 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c55d60c2-3413-48e2-90fa-2066d2270d2a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Fusion.java" beforeDir="false" afterPath="$PROJECT_DIR$/Fusion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Output/production/Code/Fusion.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Fusion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/RandomSetExperiment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.acqnt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.assctv1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.assctv2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.brkly6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.brkly7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.citri1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.citri2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.citya1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.citya2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.clarta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.clartm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.crnlea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.crnlla.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.dortd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.dortd2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.erima1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.eth001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.eth002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.inq101.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.inq102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.lsia0mf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.lsia0mw2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.nyuir1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.nyuir2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.padre1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.padre2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.pircs1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.pircs2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.rutfua1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.rutfua2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.siems1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.siems2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.topic3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.topic4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.virtu1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.vtc2s2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.vtc5s2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.westp1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.xerox3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-3/input.xerox4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.CLCLUS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.CLTHES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.Cor5A1se.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.Cor5A2cr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.Cor5M1le.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.Cor5M2rf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.DCU961.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.DCU962.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.DCU963.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.DCU964.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ETHal1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ETHas1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ETHme1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.INQ301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.INQ302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.KUSG2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.KUSG3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.LNaDesc1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.LNaDesc2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.LNmFull1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.LNmFull2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.anu5aut1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.anu5aut2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.anu5man4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.anu5man6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.brkly15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.brkly16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.brkly17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.brkly18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.city96a1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.city96a2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.colm1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.colm4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.erliA1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.fsclt3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.fsclt4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.genrl1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.genrl2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.genrl3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.genrl4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.gmu96au1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.gmu96au2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.gmu96ma1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.gmu96ma2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibmgd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibmgd2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibmge1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibmge2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibms96a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.ibms96b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.mds001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.mds002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.mds003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.pircsAAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.pircsAAS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.pircsAM1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.pircsAM2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.uwgcx0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.uwgcx1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.vtwnA1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-5/input.vtwnB1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0001.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0002.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0002.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0010.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/CWI0010.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atd2N.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atd2N.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atdN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atdN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atdnN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Flab9atdnN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wt0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wt0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wt1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9WtdMr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9WtdMr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wtnd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Mer9Wtnd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NENRtm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NENRtm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NENRtmLpas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NENRtmLpas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnmLpas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnmLpas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnmLsa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEnmLsa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEtm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NEtm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKlm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKlm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKprf20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKprf20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKse10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKse10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKse20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/NRKse20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongWAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuLongWAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortWAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/PuShortWAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Sab9web5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/Scai9Web4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/UCCS4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/acsys9mw0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/acsys9mw0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9all.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9all.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9lt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9lt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9ltdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9ltdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9td.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9td.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9tdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/apl9tdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010gbt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010glf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010glf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010glv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/att0010glv.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00ca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00ca.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00la.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00la.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00lb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00lb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00lc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/dcu00lc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9td4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9td4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9tde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9tde.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9tdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9tdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9te.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/hum9te.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00m.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00m.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00td.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00td.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00tde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iit00tde.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/isnnwt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/isnnwt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswtd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswtd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswtdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/iswtdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wcl1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wcl1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wcs1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wcs1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wll1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wll1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wll2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wll2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wls1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wls1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wls2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/jscbt9wls2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Watd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Watd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wt1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wtd2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wtd2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wttd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/pir0Wttd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpxL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dpxL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dsx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9dsx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9tpx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/ric9tpx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitNFGweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitNFGweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitNFLweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitNFLweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitWFGweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitWFGweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitWFLweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/rmitWFLweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9f1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9f1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lc10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lc10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lc50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lc50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lk50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/tnout9t2lk50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/uwmt9w10g5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmmain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmmain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmman.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmtdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmtdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmtitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/TREC-9/xvsmtitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Output/production/Code/Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/Output/production/Code/Util.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RandomSetExperiment.java" beforeDir="false" afterPath="$PROJECT_DIR$/RandomSetExperiment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result-TREC-3.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Result-TREC-3.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Result-TREC-3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.acqnt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.assctv1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.assctv2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.brkly6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.brkly7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citri1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citri2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citya1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.citya2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.clarta.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.clartm.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.crnlea.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.crnlla.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.dortd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.dortd2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.erima1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.eth001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.eth002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.inq101.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.inq102.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.lsia0mf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.lsia0mw2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.nyuir1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.nyuir2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.padre1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.padre2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.pircs1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.pircs2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.rutfua1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.rutfua2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.siems1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.siems2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.topic3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.topic4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.virtu1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.vtc2s2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.vtc5s2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.westp1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.xerox3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-3/input.xerox4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.CLCLUS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.CLTHES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5A1se.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5A2cr.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5M1le.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.Cor5M2rf.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU961.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU962.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU963.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.DCU964.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHal1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHas1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ETHme1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.INQ301.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.INQ302.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.KUSG2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.KUSG3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNaDesc1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNaDesc2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNmFull1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.LNmFull2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5aut1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5aut2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5man4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.anu5man6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly16.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.brkly18.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.city96a1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.city96a2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.colm1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.colm4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.erliA1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.fsclt3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.fsclt4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.genrl4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96au1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96au2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96ma1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.gmu96ma2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmgd1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmgd2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmge1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibmge2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibms96a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.ibms96b.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds001.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds002.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.mds003.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAAL.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAAS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAM1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.pircsAM2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.uwgcx0.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.uwgcx1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.vtwnA1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-5/input.vtwnB1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/CWI0000.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/CWI0000.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/CWI0001.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/CWI0001.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/CWI0002.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/CWI0002.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/CWI0010.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/CWI0010.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Flab9atN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Flab9atN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Flab9atd2N.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Flab9atd2N.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Flab9atdN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Flab9atdN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Flab9atdnN.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Flab9atdnN.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Mer9Wt0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Mer9Wt0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Mer9Wt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Mer9Wt1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Mer9WtdMr.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Mer9WtdMr.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Mer9Wtnd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Mer9Wtnd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NENRtm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NENRtm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NENRtmLpas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NENRtmLpas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NEnm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NEnm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NEnmLpas.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NEnmLpas.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NEnmLsa.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NEnmLsa.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NEtm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NEtm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NRKlm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NRKlm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NRKprf20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NRKprf20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NRKse10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NRKse10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/NRKse20.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/NRKse20.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuLongAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuLongAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuLongBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuLongBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuLongWAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuLongWAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuShortAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuShortAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuShortBase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuShortBase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/PuShortWAuth.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/PuShortWAuth.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Sab9web1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Sab9web1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Sab9web2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Sab9web2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Sab9web3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Sab9web3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Sab9web4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Sab9web4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Sab9web5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Sab9web5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Scai9Web1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Scai9Web1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Scai9Web2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Scai9Web2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Scai9Web3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Scai9Web3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/Scai9Web4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/Scai9Web4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/UCCS1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/UCCS1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/UCCS2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/UCCS2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/UCCS3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/UCCS3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/UCCS4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/UCCS4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/acsys9mw0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/acsys9mw0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9all.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9all.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9lt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9lt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9ltdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9ltdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9td.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9td.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/apl9tdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/apl9tdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010gb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010gb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010gbe.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010gbe.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010gbl.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010gbl.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010gbt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010gbt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010glf.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010glf.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/att0010glv.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/att0010glv.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/dcu00ca.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/dcu00ca.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/dcu00la.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/dcu00la.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/dcu00lb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/dcu00lb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/dcu00lc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/dcu00lc.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/hum9td4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/hum9td4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/hum9tde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/hum9tde.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/hum9tdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/hum9tdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/hum9te.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/hum9te.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iit00m.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iit00m.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iit00t.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iit00t.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iit00td.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iit00td.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iit00tde.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iit00tde.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/isnnwt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/isnnwt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iswt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iswt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iswtd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iswtd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/iswtdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/iswtdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wcl1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wcl1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wcs1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wcs1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wll1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wll1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wll2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wll2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wls1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wls1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/jscbt9wls2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/jscbt9wls2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/pir0Watd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/pir0Watd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/pir0Wt1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/pir0Wt1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/pir0Wtd2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/pir0Wtd2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/pir0Wttd.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/pir0Wttd.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/ric9dpn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/ric9dpn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/ric9dpx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/ric9dpx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/ric9dpxL.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/ric9dpxL.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/ric9dsx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/ric9dsx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/ric9tpx.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/ric9tpx.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/rmitNFGweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/rmitNFGweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/rmitNFLweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/rmitNFLweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/rmitWFGweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/rmitWFGweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/rmitWFLweb.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/rmitWFLweb.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/tnout9f1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/tnout9f1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/tnout9t2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/tnout9t2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/tnout9t2lc10.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/tnout9t2lc10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/tnout9t2lc50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/tnout9t2lc50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/tnout9t2lk50.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/tnout9t2lk50.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g0.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g0.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g3.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g4.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g4.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/uwmt9w10g5.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/uwmt9w10g5.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/xvsmmain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/xvsmmain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/xvsmman.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/xvsmman.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/xvsmtdn.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/xvsmtdn.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TREC-9/xvsmtitle.txt" beforeDir="false" afterPath="$PROJECT_DIR$/TREC-9/xvsmtitle.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/Util.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,8 +439,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            <state relative-caret-position="85">
+              <caret line="92" selection-start-line="92" selection-end-line="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,8 +451,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Fusion.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="252" column="71" lean-forward="true" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
+            <state relative-caret-position="4250">
+              <caret line="253" selection-start-line="253" selection-end-line="253" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,8 +475,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="142">
-              <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+            <state relative-caret-position="235">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
             </state>
           </provider>
         </entry>
@@ -114,15 +524,15 @@
         <option value="$PROJECT_DIR$/RunEntry.java" />
         <option value="$PROJECT_DIR$/BestFusionExperiment.java" />
         <option value="$PROJECT_DIR$/Reader.java" />
-        <option value="$PROJECT_DIR$/Util.java" />
         <option value="$PROJECT_DIR$/Fusion.java" />
+        <option value="$PROJECT_DIR$/Util.java" />
         <option value="$PROJECT_DIR$/RandomSetExperiment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="407" />
-    <option name="y" value="-9" />
+    <option name="x" value="405" />
+    <option name="y" value="-10" />
     <option name="width" value="1255" />
     <option name="height" value="1050" />
   </component>
@@ -131,21 +541,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Code" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580298185047" />
@@ -283,20 +679,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RunEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArraysParallelSortHelpers.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -311,6 +693,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BestFusionExperiment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Fusion.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4250">
+          <caret line="253" selection-start-line="253" selection-end-line="253" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RunEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Reader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -321,27 +734,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Fusion.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="252" column="71" lean-forward="true" selection-start-line="252" selection-start-column="71" selection-end-line="252" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/RandomSetExperiment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

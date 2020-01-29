@@ -10,7 +10,7 @@ import java.util.HashSet;
  */
 public class RandomSetExperiment
 {
-    //* STANDARD PARAMETERS
+    /* STANDARD PARAMETERS
     private static final String[] NAME = new String[]{"TREC-3", "TREC-5", "TREC-9"};
     private static final String[] RELEVANCE = new String[]{"T3-j.txt", "T5-j.txt", "T9-j.txt"};
     private static final int[] NUM_SYS = new int[]{40, 61, 104};
@@ -20,12 +20,12 @@ public class RandomSetExperiment
     private static final int REP = 200;
     //*/
 
-    /* SMALL TEST
-    private static final String[] NAME = new String[]{"TREC-5"};
-    private static final String[] RELEVANCE = new String[]{"T5-j.txt"};
-    private static final int[] NUM_SYS = new int[]{40};
-    private static final int[] TOPIC_L = new int[]{251};
-    private static final int[] TOPIC_H = new int[]{301}; // +1
+    //* SMALL TEST
+    private static final String[] NAME = new String[]{"TREC-9"};
+    private static final String[] RELEVANCE = new String[]{"T9-j.txt"};
+    private static final int[] NUM_SYS = new int[]{104};
+    private static final int[] TOPIC_L = new int[]{451};
+    private static final int[] TOPIC_H = new int[]{501}; // +1
     private static final int[] DIM = new int[]{2, 4, 6, 8, 10, 12};
     private static final int REP = 200;
     //*/
@@ -89,7 +89,7 @@ public class RandomSetExperiment
                         double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(superRun,l,chosenSys), relevant[l]);
                         double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun,l,chosenSys,cmpHM[l]), relevant[l]);
 
-                        double normalize = REP * (topics);
+                        double normalize = REP * topics;
 
                         resultMAP[i][0][j] += combMNZ / normalize;
                         resultMAP[i][1][j] += rCombMNZ / normalize;
