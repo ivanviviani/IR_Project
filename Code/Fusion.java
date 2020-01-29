@@ -70,7 +70,7 @@ public class Fusion
         }
 
 
-        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
         //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
@@ -144,7 +144,7 @@ public class Fusion
         }
 
         //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
-        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
@@ -206,7 +206,7 @@ public class Fusion
         RunEntry[] finalRun = collection.values().toArray(new RunEntry[0]);
 
         //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
-        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
+        Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
 
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 

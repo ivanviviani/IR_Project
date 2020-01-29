@@ -1,5 +1,4 @@
 import java.io.PrintWriter;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -11,7 +10,7 @@ import java.util.HashSet;
  */
 public class RandomSetExperiment
 {
-    /* STANDARD PARAMETERS
+    //* STANDARD PARAMETERS
     private static final String[] NAME = new String[]{"TREC-3", "TREC-5", "TREC-9"};
     private static final String[] RELEVANCE = new String[]{"T3-j.txt", "T5-j.txt", "T9-j.txt"};
     private static final int[] NUM_SYS = new int[]{40, 61, 104};
@@ -21,12 +20,12 @@ public class RandomSetExperiment
     private static final int REP = 200;
     //*/
 
-    //* SMALL TEST
-    private static final String[] NAME = new String[]{"TREC-3"};
-    private static final String[] RELEVANCE = new String[]{"T3-j.txt"};
+    /* SMALL TEST
+    private static final String[] NAME = new String[]{"TREC-5"};
+    private static final String[] RELEVANCE = new String[]{"T5-j.txt"};
     private static final int[] NUM_SYS = new int[]{40};
-    private static final int[] TOPIC_L = new int[]{151};
-    private static final int[] TOPIC_H = new int[]{201}; // +1
+    private static final int[] TOPIC_L = new int[]{251};
+    private static final int[] TOPIC_H = new int[]{301}; // +1
     private static final int[] DIM = new int[]{2, 4, 6, 8, 10, 12};
     private static final int REP = 200;
     //*/
@@ -108,7 +107,7 @@ public class RandomSetExperiment
         {
             for (int i = 0; i < NAME.length; i++)
             {
-                PrintWriter pw = new PrintWriter("Result-" + NAME[i] + ".txt");
+                PrintWriter pw = new PrintWriter("Result-" + NAME[i] + ".csv");
                 for (int j = 0; j < resultMAP[i].length; j++)
                 {
                     pw.print(fm[j] + ";");
