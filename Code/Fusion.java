@@ -1,5 +1,3 @@
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashMap;
 import java.util.HashSet;
 
@@ -26,19 +24,11 @@ public class Fusion
 
         for (int i = 0; i < sys.length; i++)
         {
-            double max = -1;
             for (int j = 0; j < superRun[topic][sys[i]].length; j++)
             {
                 // Get current entry property
                 String currKey = superRun[topic][sys[i]][j].id;
                 double currScore = superRun[topic][sys[i]][j].score;
-
-                if(max == -1)
-                {
-                    max = currScore;
-                }
-
-                currScore = currScore/max;
 
                 // If already present, update
                 if (collection.containsKey(currKey))
@@ -68,11 +58,7 @@ public class Fusion
         {
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
-
-
         Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
-        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
-
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         return finalRun;
@@ -100,19 +86,11 @@ public class Fusion
 
         for (int i = 0; i < sys.length; i++)
         {
-            double max = -1;
             for (int j = 0; j < superRun[topic][sys[i]].length; j++)
             {
                 // Get current entry property
                 String currKey = superRun[topic][sys[i]][j].id;
                 double currScore = superRun[topic][sys[i]].length-1-j;
-
-                if(max == -1)
-                {
-                    max = currScore;
-                }
-
-                currScore = currScore/max;
 
                 // If already present, update
                 if (collection.containsKey(currKey))
@@ -142,10 +120,7 @@ public class Fusion
         {
             finalRun[i].multiplyScore(counter.get(finalRun[i].id));
         }
-
-        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
         Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
-
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         return finalRun;
@@ -171,19 +146,11 @@ public class Fusion
 
         for (int i = 0; i < sys.length; i++)
         {
-            double max = -1;
             for (int j = 0; j < superRun[topic][sys[i]].length; j++)
             {
                 // Get current entry property
                 String currKey = superRun[topic][sys[i]][j].id;
                 double currScore = superRun[topic][sys[i]].length-1-j;
-
-                if(max == -1)
-                {
-                    max = currScore;
-                }
-
-                currScore = currScore/max;
 
                 // If already present, update
                 if (collection.containsKey(currKey))
@@ -204,10 +171,7 @@ public class Fusion
          * by score (sum of points) and trimmed to the first 1000 results.
          */
         RunEntry[] finalRun = collection.values().toArray(new RunEntry[0]);
-
-        //Arrays.parallelSort(finalRun, (x, y) -> (x.score-y.score>0)?-1:((x.score-y.score<0)?(1):0));
         Util.quickSort(finalRun, (x, y) -> (x.score-y.score>0)?(1):((x.score-y.score<0)?(-1):0));
-
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         return finalRun;
@@ -249,9 +213,7 @@ public class Fusion
         {
             finalRun[i] = new RunEntry(ids[i],1/(i+1.0)); // symbolic score
         }
-
         Util.quickSort(finalRun, new MajRunoffComparator(sys,support));
-
         finalRun = Util.extractTop(finalRun, RunEntry.RUN_LEN);
 
         return finalRun;

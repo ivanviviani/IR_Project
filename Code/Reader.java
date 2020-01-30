@@ -1,5 +1,9 @@
 import java.io.File;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Random;
+import java.util.Scanner;
 
 public class Reader
 {
@@ -63,8 +67,8 @@ public class Reader
      */
     public static HashMap<String, Integer[]>[] extractComparator(RunEntry[][][] superRun)
     {
-        // Not found = 0
-        // Found = rank index 1-based
+        // Not found = null
+        // Found = rank index 0-based
         HashMap<String,Integer[]>[] cmp = new HashMap[superRun.length];
         for (int i = 0; i < superRun.length; i++)
         {
@@ -126,7 +130,7 @@ public class Reader
                     currTopic++;
                 }
 
-                if (Integer.parseInt(line[3]) == 1)
+                if (Integer.parseInt(line[3]) > 0)
                 {
                     currJudge.add(line[2]);
                 }

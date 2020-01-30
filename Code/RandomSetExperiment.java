@@ -10,7 +10,7 @@ import java.util.HashSet;
  */
 public class RandomSetExperiment
 {
-    /* STANDARD PARAMETERS
+    //* STANDARD PARAMETERS
     private static final String[] NAME = new String[]{"TREC-3", "TREC-5", "TREC-9"};
     private static final String[] RELEVANCE = new String[]{"T3-j.txt", "T5-j.txt", "T9-j.txt"};
     private static final int[] NUM_SYS = new int[]{40, 61, 104};
@@ -20,7 +20,7 @@ public class RandomSetExperiment
     private static final int REP = 200;
     //*/
 
-    //* SMALL TEST
+    /* SMALL TEST
     private static final String[] NAME = new String[]{"TREC-9"};
     private static final String[] RELEVANCE = new String[]{"T9-j.txt"};
     private static final int[] NUM_SYS = new int[]{104};
@@ -30,52 +30,41 @@ public class RandomSetExperiment
     private static final int REP = 200;
     //*/
 
-    /* DEBUG PARAMETERS
-    private static final String[] NAME = new String[]{"TREC-3"};
-    private static final String[] RELEVANCE = new String[]{"T3-judgement.txt"};
-    private static final int[] NUM_SYS = new int[]{3};
-    private static final int[] TOPIC_L = new int[]{1};
-    private static final int[] TOPIC_H = new int[]{2}; // +1
-    private static final int[] DIM = new int[]{2,3};
-    private static final int REP = 1;
-    //*/
-
     public static void main(String[] args)
     {
         // [trec][combMNZ-rCombMNZ-bordaFuse-condorcetFuse][size]
         double[][][] resultMAP = new double[NAME.length][4][DIM.length];
-        String[] fm = new String[]{"combMNZ","rCombMNZ","bordaFuse","condorcetFuse"};
+        String[] fm = new String[]{"combMNZ", "rCombMNZ", "bordaFuse", "condorcetFuse"};
 
         for (int i = 0; i < NAME.length; i++)
         {
-            int topics = TOPIC_H[i]-TOPIC_L[i];
+            int topics = TOPIC_H[i] - TOPIC_L[i];
 
             long t = System.currentTimeMillis();
             System.out.print("Reading judgement");
-            // Store run and relevance judgement
             // [topic]
             HashSet<String>[] relevant = Reader.extractJudgement(topics, RELEVANCE[i]);
-            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
+            System.out.println(" (" + (System.currentTimeMillis() - t) + " ms)");
 
             t = System.currentTimeMillis();
             System.out.print("Reading runs");
             // [topic][sys][rank]
-            RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i],TOPIC_H[i]}, NAME[i]);
-            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
+            RunEntry[][][] superRun = Reader.extractSuperRun(new int[]{TOPIC_L[i], TOPIC_H[i]}, NAME[i]);
+            System.out.println(" (" + (System.currentTimeMillis() - t) + " ms)");
 
             t = System.currentTimeMillis();
             System.out.print("Creating comparators hash maps");
-            // [topic][sys][rank]
-            HashMap<String,Integer[]>[] cmpHM = Reader.extractComparator(superRun);
-            System.out.println(" ("+(System.currentTimeMillis()-t)+" ms)");
+            // < doc, ranks >
+            HashMap<String, Integer[]>[] support = Reader.extractComparator(superRun);
+            System.out.println(" (" + (System.currentTimeMillis() - t) + " ms)");
 
             // ITERATION MONITOR
-            System.out.println("ED: "+NAME[i]);
+            System.out.println("ED: " + NAME[i]);
             for (int j = 0; j < DIM.length; j++)
             {
                 // ITERATION MONITOR
                 t = System.currentTimeMillis();
-                System.out.println("SAMPLE: "+DIM[j]);
+                System.out.println("SAMPLE: " + DIM[j]);
                 for (int k = 0; k < REP; k++)
                 {
                     // ITERATION MONITOR
@@ -84,10 +73,10 @@ public class RandomSetExperiment
 
                     for (int l = 0; l < topics; l++)
                     {
-                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(superRun,l,chosenSys), relevant[l]);
-                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(superRun,l,chosenSys), relevant[l]);
-                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(superRun,l,chosenSys), relevant[l]);
-                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun,l,chosenSys,cmpHM[l]), relevant[l]);
+                        double combMNZ = Util.averagePrecision(Fusion.combMNZ(superRun, l, chosenSys), relevant[l]);
+                        double rCombMNZ = Util.averagePrecision(Fusion.rCombMNZ(superRun, l, chosenSys), relevant[l]);
+                        double bordaFuse = Util.averagePrecision(Fusion.bordaFuse(superRun, l, chosenSys), relevant[l]);
+                        double condorcetFuse = Util.averagePrecision(Fusion.condorcetFuse(superRun, l, chosenSys, support[l]), relevant[l]);
 
                         double normalize = REP * topics;
 
@@ -99,15 +88,12 @@ public class RandomSetExperiment
                 }
                 // ITERATION MONITOR
                 System.out.println();
-                System.out.println("SAMPLE: "+DIM[j]+" ("+(System.currentTimeMillis()-t)+" ms)");
+                System.out.println("SAMPLE: " + DIM[j] + " (" + (System.currentTimeMillis() - t) + " ms)");
             }
-        }
 
-        try
-        {
-            for (int i = 0; i < NAME.length; i++)
+            try
             {
-                PrintWriter pw = new PrintWriter("Result-" + NAME[i] + ".csv");
+                PrintWriter pw = new PrintWriter("Result-RANDOM-" + NAME[i] + ".csv");
                 for (int j = 0; j < resultMAP[i].length; j++)
                 {
                     pw.print(fm[j] + ";");
@@ -119,10 +105,10 @@ public class RandomSetExperiment
                 }
                 pw.close();
             }
-        }
-        catch (Exception e)
-        {
-            e.printStackTrace();
+            catch (Exception e)
+            {
+                e.printStackTrace();
+            }
         }
     }
 }
