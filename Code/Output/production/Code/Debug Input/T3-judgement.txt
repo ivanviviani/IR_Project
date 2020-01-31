@@ -1,4 +1,0 @@
-1	0	docA	1
-1	0	docE	0
-1	0	docC	1
-1	0	docD	1
